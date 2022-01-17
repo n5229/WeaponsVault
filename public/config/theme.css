@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+:root 
+{
+box-sizing: border-box;
+margin: 0;
+background-color: rgb(0, 0, 0);
+padding: 0; 
+}
+.secondButton
+{
+position: absolute;
+top: 30px;
+right: 30px;
+z-index: 9999;
+} 
+
+.MintBox
+{
+background-color: rgb(0, 0, 0);
+opacity: 0.65;
+position: absolute;
+width: 500px;
+height: 350px;
+}
+
+head html
+{
+font-size: 100%;
+font-family: "Roboto Mono", sans-serif;
+margin: 0;
+padding:0;
+}
+
+body html
+{
+margin:0;
+padding:0;
+}
+
+/*Header CSS*/
+nav ul
+{
+list-style: none;
+padding: 0;
+background: #000000;
+display: flex;
+justify-content: space-between;
+transition: .5s ease;
+}
+
+nav ul li a
+{
+color:rgb(255, 255, 255);
+text-decoration: none;
+padding: .8rem 1rem;
+display: block;
+line-height: 1;
+transition: .5s ease;
+
+}
+
+nav ul li
+{
+border-bottom: 1px solid #ddd;
+text-align: left;
+border-bottom: none;
+flex: 1 0 auto;
+}
+
+nav ul li a:hover
+{
+color: RGBA(0,136,169,0.8);
+}
+
+/* styling logo */
+nav div:first-child
+{
+background: rgb(0, 0, 0);
+}
+
+nav div:first-child h1
+{
+line-height: 0;
+padding: .2rem .6rem;
+text-align: left;
+
+}
+
+nav div:first-child h1 nav ul
+{
+margin: 0;
+}
+
+/* styling NAV BAR for larger devices */
+@media only screen and (min-width:
+600px){
+nav
+{
+display: flex;
+justify-content: space-between;
+background: rgb(0, 0, 0);
+}
+nav ul
+{
+display: flex;
+align-items: center;
+background: none;
+padding-right: 20rem;
+}
+nav div:first-child h1
+{
+padding: 0;
+margin: 0 1rem;
+}
+nav div:first-child img
+{
+height: 80px;
+
+}
+nav ul li
+{
+border-bottom: none;
+flex: 1 0 auto;
+position: relative;
+}
+nav ul li a
+{
+padding: 1.2rem 1rem;
+}
+nav ul li a:hover
+{
+color: RGBA(0,136,169,0.8);
+}
+.secondButton{
+position: absolute;
+top: 23px;
+right: 20px;
+z-index: 9999;
+} 
+}
+/* Discord icon*/
+.icons8-discord
+{ 
+display: inline-block;
+width: 16px;
+height: 16px;
+background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjAiIGhlaWdodD0iMjAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6I2ZmZmZmZjsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSIjMDAwMDAwIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTE0NC4wMjEzMywzOS44MjM3M2MtMTMuODk3NiwtMTEuMTY4NTMgLTM1Ljg3MzQ3LC0xMy4wNjA1MyAtMzYuODAyMjcsLTEzLjE0MDhjLTEuNDY3NzMsLTAuMTI2MTMgLTIuODYwOTMsMC43MDUyIC0zLjQ2MjkzLDIuMDQ2OGMtMC4wMjI5MywwLjA0NTg3IC0xLjI0OTg3LDMuNjA2MjcgLTIuNDM2NjcsNy4wNDA1M2MxNi4xNTA4LDIuODI2NTMgMjcuMTI0NCw5LjA5ODggMjcuNzA5Miw5LjQ0MjhjMi43NDA1MywxLjU5Mzg3IDMuNjU3ODcsNS4xMDg0IDIuMDU4MjcsNy44NDMyYy0xLjA2MDY3LDEuODIzMiAtMi45ODEzMywyLjg0MzczIC00Ljk1MzYsMi44NDM3M2MtMC45ODA0LDAgLTEuOTY2NTMsLTAuMjQ2NTMgLTIuODcyNCwtMC43NzRjLTAuMTYwNTMsLTAuMDk3NDcgLTE2LjI1OTczLC05LjI1OTMzIC0zNy4yNDk0NywtOS4yNTkzM2MtMjAuOTk1NDcsMCAtMzcuMTAwNCw5LjE2NzYgLTM3LjI2MDkzLDkuMjU5MzNjLTIuNzM0OCwxLjU4ODEzIC02LjI0MzYsMC42NTM2IC03LjgzMTczLC0yLjA4NjkzYy0xLjU4ODEzLC0yLjcyOTA3IC0wLjY2NTA3LC02LjIzMjEzIDIuMDY0LC03LjgyNmMwLjU4NDgsLTAuMzQ0IDExLjU5ODUzLC02LjYzOTIgMjcuNzk1MiwtOS40NmMtMS4yNDk4NywtMy40NzQ0IC0yLjUxMTIsLTYuOTc3NDcgLTIuNTM0MTMsLTcuMDIzMzNjLTAuNjAyLC0xLjM0NzMzIC0xLjk5NTIsLTIuMTk1ODcgLTMuNDYyOTMsLTIuMDQ2OGMtMC45Mjg4LDAuMDc0NTMgLTIyLjkwNDY3LDEuOTY2NTMgLTM2Ljk4NTczLDEzLjI4OTg3Yy03LjM2MTYsNi43OTk3MyAtMjIuMDYxODcsNDYuNTU0NjcgLTIyLjA2MTg3LDgwLjkyNmMwLDAuNjA3NzMgMC4xNTQ4LDEuMTk4MjcgMC40NTg2NywxLjcyNTczYzEwLjE1MzczLDE3LjgzMDY3IDM3LjgzNDI3LDIyLjQ5NzYgNDQuMTQwOTMsMjIuNjk4MjdjMC4wNDAxMywwLjAwNTczIDAuMDc0NTMsMC4wMDU3MyAwLjEwODkzLDAuMDA1NzNjMS4xMTIyNywwIDIuMTYxNDcsLTAuNTMzMiAyLjgyMDgsLTEuNDMzMzNsNi44MjI2NywtOS4yNDIxM2MtMTQuOTY0LC0zLjYwNjI3IC0yMi44NzYsLTkuMjc2NTMgLTIzLjM1MTg3LC05LjYyNjI3Yy0yLjU0NTYsLTEuODc0OCAtMy4wOTYsLTUuNDYzODcgLTEuMjIxMiwtOC4wMTUyYzEuODY5MDcsLTIuNTM5ODcgNS40NDY2NywtMy4xMDE3MyA3Ljk5MjI3LC0xLjIzODRjMC4yMTIxMywwLjEzNzYgMTQuODE0OTMsMTAuMzYwMTMgNDIuNDk1NDcsMTAuMzYwMTNjMjcuNzg5NDcsMCA0Mi4zNTIxMywtMTAuMjYyNjcgNDIuNDk1NDcsLTEwLjM2NTg3YzIuNTQ1NiwtMS44NDYxMyA2LjEzNDY3LC0xLjI5IDcuOTk4LDEuMjY3MDdjMS44NTc2LDIuNTQ1NiAxLjMxODY3LDYuMTExNzMgLTEuMjE1NDcsNy45ODA4Yy0wLjQ3NTg3LDAuMzQ5NzMgLTguMzQ3NzMsNi4wMDg1MyAtMjMuMjc3MzMsOS42MTQ4bDYuNzM2NjcsOS4yNTkzM2MwLjY1OTMzLDAuOTA1ODcgMS43MDg1MywxLjQzMzMzIDIuODIwOCwxLjQzMzMzYzAuMDQwMTMsMCAwLjA3NDUzLDAgMC4xMDg5MywtMC4wMDU3M2M2LjMxMjQsLTAuMjAwNjcgMzMuOTkyOTMsLTQuODY3NiA0NC4xNDA5MywtMjIuNjk4MjdjMC4zMDM4NywtMC41Mjc0NyAwLjQ1ODY3LC0xLjExOCAwLjQ1ODY3LC0xLjcyNTczYzAsLTM0LjM2NTYgLTE0LjcwMDI3LC03NC4xMjA1MyAtMjIuMjQ1MzMsLTgxLjA2OTMzek02My4wNjY2NywxMDguOTMzMzNjLTYuMzM1MzMsMCAtMTEuNDY2NjcsLTYuNDE1NiAtMTEuNDY2NjcsLTE0LjMzMzMzYzAsLTcuOTE3NzMgNS4xMzEzMywtMTQuMzMzMzMgMTEuNDY2NjcsLTE0LjMzMzMzYzYuMzM1MzMsMCAxMS40NjY2Nyw2LjQxNTYgMTEuNDY2NjcsMTQuMzMzMzNjMCw3LjkxNzczIC01LjEzMTMzLDE0LjMzMzMzIC0xMS40NjY2NywxNC4zMzMzM3pNMTA4LjkzMzMzLDEwOC45MzMzM2MtNi4zMzUzMywwIC0xMS40NjY2NywtNi40MTU2IC0xMS40NjY2NywtMTQuMzMzMzNjMCwtNy45MTc3MyA1LjEzMTMzLC0xNC4zMzMzMyAxMS40NjY2NywtMTQuMzMzMzNjNi4zMzUzMywwIDExLjQ2NjY3LDYuNDE1NiAxMS40NjY2NywxNC4zMzMzM2MwLDcuOTE3NzMgLTUuMTMxMzMsMTQuMzMzMzMgLTExLjQ2NjY3LDE0LjMzMzMzeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+') 50% 50% no-repeat;
+background-size: 100%; 
+}
+  
+button
+{
+color: white;
+padding: 9px 25px;
+background-color:rgb(80, 163, 30);
+border: none;
+border-radius: 50px;
+cursor: pointer;
+transition: .5s ease;
+}
+
+button:hover
+{
+background-color: RGBA(0,136,169,0.8);
+}
+table
+{
+background-color: black;
+position: absolute;
+width: 488.77px;
+height: 157.94px;
+}
+
+.countdownContainer
+{ 
+position: absolute;;
+top: 100%;
+left: 50%;
+width: auto;
+transform: translateX(-50%) translateY(-200%);
+text-align: center;
+border: 1px solid rgb(53, 185, 0);
+padding: 10px;
+}
+
+.info
+{
+font-size: 35px;
+font-weight: 500;
+color: white;
+font-weight: bold !important;
+font-family: 'Rammetto One',cursive;
+}
+
+.info2
+{
+color: rgb(255, 255, 255);
+font-family: 'Rammetto One',cursive;
+}
+.LaunchTitle
+{
+font-size: 45px;
+font-weight: 500;
+color: #FFD700;
+font-family: 'Rammetto One',cursive;
+line-height: 54px;
+}
+h1
+{
+font-size: 30px ;
+font-weight: bold ;
+font-style: oblique ;
+color: #ecf0f1;
+padding: 9px 0px;
+}
+
+p
+{
+color: white;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 16pt;
+}
+
+.Intro
+{
+text-decoration: none;
+font-size: 18px;
+font-family: 'Source Sans Pro', sans-serif;
+white-space: wrap;
+text-align: left;
+}
+
+.Container
+{
+position: relative;
+width: 100%;
+padding: 60px 100px;
+
+}
+.Container h2 /*.vWelcome  Welcome to the Vault Header */
+{
+font-size: 18px;
+font-size: 30px ;
+font-weight: bold ;
+font-style: oblique ;
+color: #ecf0f1;
+padding: 10px;
+}
+.Container p
+{
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 18px;
+color: white;
+text-align: justify;
+padding: 10px;
+}
+
+.Containerimg
+{
+float: left;
+width: 500px;
+padding: 10px;
+
+}
+
+/*IPHONE Screen FOR Intro to Vault & img*/
+@media only screen and (max-width: 500px){
+.Container
+{
+justify-content: flex-end;
+position: relative;
+padding: 20px 20px;
+margin-top: -30%;
+}
+.Containerimg
+{
+float:left;
+width: 200px;
+length: 300px;
+}
+
+.Container p{
+margin: 0;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 16px;
+flex-wrap: wrap;
+margin: 0;
+text-align: left;
+}
+.Container h2{
+font-size: 20px;
+}
+.countdownContainer
+{
+transform: translateX(-50%) translateY(-150%);
+width: auto;
+}
+}
+
+
+
+/*IPHONE Screen FOR Intro to Vault & img*/
+@media only screen and (max-width: 813px){
+.Container
+{
+justify-content: flex-end;
+position: relative;
+padding: 20px 20px;
+margin-top: -50%;
+}
+.Containerimg
+{
+float:left;
+width: 200px;
+length: 300px;
+}
+
+.Container p{
+margin: 0;
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 16px;
+flex-wrap: wrap;
+margin: 0;
+text-align: left;
+}
+.Container h2{
+font-size: 20px;
+}
+.countdownContainer
+{
+transform: translateX(-50%) translateY(-150%);
+width: auto;
+}
+}
+
+/* Bullet Section*/
+.AboutBullet
+{
+text-align: center;
+position: relative;
+font-size: 30px;
+color: rgb(255, 255, 255);
+margin-top: 80px;
+}
+.About
+{
+text-align: center;
+position: relative;
+font-size: 30px;
+color: rgb(255, 255, 255);
+margin-top: 50px;
+} 
+
+.AllBullets
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+padding: 10px;
+}
+.Bullets
+{
+width: 500px;
+border: 1px solid rgb(0, 0, 0);
+padding:20px;
+}
+
+.Bullets img{
+  float: left;
+}
+
+.BulletText{
+font-size: 16px;
+font-family: 'Source Sans Pro', sans-serif;
+color: white;
+display: block;
+word-break: break-word;
+}
+
+@media only screen and (min-width: 814px) and (max-width: 900px){
+
+.countdownContainer
+{
+transform: translateX(-50%) translateY(-280%);
+width: auto;
+}
+.Container
+{
+padding: 10px 20px;
+margin-top: -40%;
+}
+  
+}
+
+.WeaponsPhotos
+{
+padding-top: 30px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+
+.RoadmapInfo
+{
+display: center;
+text-align: center;
+color: white;
+font-size: 18px;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+.TeamPhotos
+{
+vertical-align: top;
+text-align: center;
+padding: 25px;
+}
+
+.allteam
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+/* Smaller screen */
+@media only screen and (max-width: 600px){
+
+
+
+  .TeamPhotos
+{
+display: center !important;
+justify-content: center !important;
+}
+.RoadmapInfo
+{
+padding: 30px;
+}
+
+.WeaponsPhotos img
+{
+min-width: 100%;
+}
+.allteam
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;  
+}
+}
+
+@media only screen and (max-width: 900px){
+.WeaponsPhotos
+{
+min-width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.allteam
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+   
+}
+
+.allteam .TeamNames
+{
+font-size: 24px;
+font-family: 'Source Sans Pro', sans-serif;
+color: white;
+display: block;
+}
+
+.Genr8Photo
+{
+vertical-align: top;
+display: center;
+text-align: center;
+padding: 25px;
+justify-content: space-between;
+}
+
+.Genr8
+{
+font-size: 24px;
+font-family: 'Source Sans Pro', sans-serif;
+color: white;
+display: center;
+text-decoration: none;
+list-style: none;
+}
+.VaultPhotos
+{
+text-align: center;
+position: relative;
+font-size: 30px;
+color: rgb(255, 255, 255);
+}
+
+.VaultPhotos hr {
+  border: none;
+  border-top: 3px double rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+.VaultPhotos hr:after {
+  background: rgb(0, 0, 0);
+  content: ' A Look into the Vault';
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+.roadmapBackground
+{
+background-image: url("../config/images/BG1.jpg");
+ max-width: 100%;
+
+}
+    
+.RoadmapHeaders
+{
+color: gold;
+font-size: 16px;
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: bold;
+text-align: center;
+}
+
+footer
+{
+text-align: center;
+padding: 3px;
+color: white;
+}
+
+.Termscondition
+{
+text-align: right;
+margin-right: 20px;
+}
+
+.termsp
+{
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 16pt;
+margin-top: 0;
+margin-bottom: 1rem;
+box-sizing: border-box;
+padding: .8rem 3rem;
+}
+
+.termsh
+{
+padding: .5rem 3rem;
+}
+
+@media only screen and (max-width: 812px){
+
+footer nav div:first-child
+{
+  padding-left: 7rem;
+}
+}
+.contractAddress
+{
+text-align: center;
+margin-right: 20px;
+color: white;
+}
+
+.contractAddress a
+{
+color: gold;
+text-decoration: none;
+overflow: hidden;
+}

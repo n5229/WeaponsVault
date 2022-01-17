@@ -1,0 +1,22 @@
+{
+  "CONTRACT_ADDRESS": "0x3ad69678eA5e039051B2B3a35126dA5e69C09858",
+  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x3ad69678eA5e039051B2B3a35126dA5e69C09858#readContract",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": "4"
+  },
+  "NFT_NAME": "Weapons",
+  "SYMBOL": "VULT",
+  "MAX_SUPPLY":10000,
+  "WEI_COST": 88000000000000000,
+  "DISPLAY_COST": 0.088,
+  "GAS_LIMIT": 285000, 
+  "MARKETPLACE": "Opensea",
+  "MARKETPLACE_LINK": "https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/44124883264655680784274633712610935226205111122616276762989776627977072130046/",
+  "SHOW_BACKGROUND": true,
+  "SHOW_BACKGROUND2": true,
+  "Opensea_Link": ""
+  
+}
+
