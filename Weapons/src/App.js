@@ -331,7 +331,7 @@ function App() {
                           color: "red",
                           fontWeight: "bold",
                           fontSize: 30,
-                          backgroundColor: "red",
+                          
                         }}
                       >
                         {blockchain.errorMsg}
