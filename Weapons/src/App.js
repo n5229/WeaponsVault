@@ -304,16 +304,16 @@ function App() {
                     }}
                   >
                   </s.TextDescription>
-                  <button
+                   <button
               className="secondButton"
                     onClick={(e) => {
                       e.preventDefault();
-                      dispatch(connect());
+                     // dispatch(connect());
                       getData();
                     }}
                   >
                  Mint Weapon
-                  </button>
+                  </button> 
                     
                     {/* <div className="App">
                       <Modal isOpen={true}>
