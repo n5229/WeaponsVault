@@ -211,24 +211,14 @@ function App() {
   return (
     
     <s.Screen>
-               <StyledImg alt={"CoverArt"} src={"/config/images/CAN3.jpg"} />
+             <StyledImg alt={"CoverArt"} src={"/config/images/CAN3.jpg"} /> 
       <s.Container
    
-        style={{
-      marginBottom: -280,
-          padding: 24,
-          backgroundColor: "var(--primary)",
-          flex: "auto"
-        }}
-  
-    // image={CONFIG.SHOW_BACKGROUND ? "/config/images/Bg.jpeg" : null}
-      >
-    
+       >
         <s.SpacerSmall />
 
         <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
           <s.Container flex={1} jc={"center"} ai={"center"}>
- 
           </s.Container>
           <s.SpacerLarge />
           <s.Container

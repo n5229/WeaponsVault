@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
 :root 
 {
-box-sizing: border-box;
 margin: 0;
 background-color: rgb(0, 0, 0);
 padding: 0; 
+
 }
 .secondButton
 {
@@ -112,7 +112,7 @@ nav div:first-child h1
 {
 padding: 0;
 margin-left: .8rem;
-
+height: 80px;
 }
 nav ul li a:hover
 {
@@ -148,15 +148,33 @@ height: 157.94px;
 
 .countdownContainer
 { 
-position: absolute;;
+position: absolute;
 top: 100%;
 left: 50%;
 width: auto;
-transform: translateX(-50%) translateY(-200%);
+transform: translateX(-50%) translateY(-100%);
 text-align: center;
 border: 1px solid rgb(53, 185, 0);
 padding: 10px;
 }
+
+@media only screen and (max-width: 375px){
+.countdownContainer
+{
+transform: translateX(-50%) translateY(-220%);
+width: auto;
+position: relative;
+}
+}
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+.countdownContainer
+{
+transform: translateX(-50%) translateY(-340%);
+width: auto;
+position: relative;
+}
+}
+
 
 .info
 {
@@ -209,8 +227,8 @@ text-align: left;
 {
 position: relative;
 width: 100%;
-padding: 60px 100px;
-
+padding: 60px 100px; 
+margin-top: -10%;
 }
 .Container h2 /*.vWelcome  Welcome to the Vault Header */
 {
@@ -239,13 +257,14 @@ padding: 10px;
 }
 
 /*IPHONE Screen FOR Intro to Vault & img*/
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
 .Container
 {
 justify-content: flex-end;
 position: relative;
 padding: 20px 20px;
-margin-top: -30%;
+margin-top: -90%;
+
 }
 .Containerimg
 {
@@ -258,55 +277,15 @@ length: 300px;
 margin: 0;
 font-family: 'Source Sans Pro', sans-serif;
 font-size: 16px;
-flex-wrap: wrap;
+flex-wrap: nowrap;
 margin: 0;
 text-align: left;
 }
 .Container h2{
 font-size: 20px;
 }
-.countdownContainer
-{
-transform: translateX(-50%) translateY(-150%);
-width: auto;
-}
 }
 
-
-
-/*IPHONE Screen FOR Intro to Vault & img*/
-@media only screen and (max-width: 813px){
-.Container
-{
-justify-content: flex-end;
-position: relative;
-padding: 20px 20px;
-margin-top: -50%;
-}
-.Containerimg
-{
-float:left;
-width: 200px;
-length: 300px;
-}
-
-.Container p{
-margin: 0;
-font-family: 'Source Sans Pro', sans-serif;
-font-size: 16px;
-flex-wrap: wrap;
-margin: 0;
-text-align: left;
-}
-.Container h2{
-font-size: 20px;
-}
-.countdownContainer
-{
-transform: translateX(-50%) translateY(-150%);
-width: auto;
-}
-}
 
 /* Bullet Section*/
 .AboutBullet
@@ -316,6 +295,7 @@ position: relative;
 font-size: 30px;
 color: rgb(255, 255, 255);
 margin-top: 80px;
+
 }
 .About
 {
@@ -332,6 +312,7 @@ display: flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
 padding: 10px;
+
 }
 .Bullets
 {
@@ -361,7 +342,7 @@ width: auto;
 }
 .Container
 {
-padding: 10px 20px;
+padding: 20px 20px;
 margin-top: -40%;
 }
   
@@ -545,7 +526,7 @@ padding: .8rem 3rem;
 padding: .5rem 3rem;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 550){
 
 footer nav ul li a
 {
