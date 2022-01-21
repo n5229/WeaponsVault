@@ -162,7 +162,7 @@ padding: 10px;
 @media only screen and (max-width: 375px){
 .countdownContainer
 {
-transform: translateX(-50%) translateY(-210%);
+transform: translateX(-50%) translateY(-230%);
 width: auto;
 position: relative;
 }
@@ -170,7 +170,7 @@ position: relative;
 @media only screen and (min-width: 376px) and (max-width: 480px) {
 .countdownContainer
 {
-transform: translateX(-50%) translateY(-340%);
+transform: translateX(-50%) translateY(-320%);
 width: auto;
 position: relative;
 }
@@ -264,7 +264,7 @@ padding: 10px;
 justify-content: flex-end;
 position: relative;
 padding: 20px 20px;
-margin-top: -90%;
+margin-top: -100%;
 
 }
 .Containerimg
