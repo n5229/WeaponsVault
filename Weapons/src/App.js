@@ -206,8 +206,6 @@ function App() {
     getData();
   }, [blockchain.account]);
 
-
-
   return (
     
     <s.Screen>
@@ -239,7 +237,6 @@ function App() {
 
           }}
           >
-
             <s.TextDescription
               style={{
                 textAlign: "center",
@@ -298,7 +295,7 @@ function App() {
               className="secondButton"
                     onClick={(e) => {
                       e.preventDefault();
-                     // dispatch(connect());
+                     //dispatch(connect());
                       getData();
                     }}
                   >

@@ -77,6 +77,7 @@ nav div:first-child h1
 {
 line-height: 0;
 padding: .8rem 0rem;
+height: 85;
 }
 nav div:first-child h1 nav ul
 {
@@ -161,7 +162,7 @@ padding: 10px;
 @media only screen and (max-width: 375px){
 .countdownContainer
 {
-transform: translateX(-50%) translateY(-220%);
+transform: translateX(-50%) translateY(-210%);
 width: auto;
 position: relative;
 }
@@ -284,6 +285,14 @@ text-align: left;
 .Container h2{
 font-size: 20px;
 }
+.TeamIntro
+{
+text-align: center;
+position: relative;
+font-size: 25px;
+color: rgb(255, 255, 255);
+margin-top: 50px;
+} 
 }
 
 
@@ -298,6 +307,14 @@ margin-top: 80px;
 
 }
 .About
+{
+text-align: center;
+position: relative;
+font-size: 30px;
+color: rgb(255, 255, 255);
+margin-top: 50px;
+} 
+.TeamIntro
 {
 text-align: center;
 position: relative;
@@ -322,7 +339,7 @@ padding:20px;
 }
 
 .Bullets img{
-  float: left;
+float: left;
 }
 
 .BulletText{
@@ -366,6 +383,8 @@ color: white;
 font-size: 18px;
 font-family: 'Source Sans Pro', sans-serif;
 }
+
+
 
 .TeamPhotos
 {
@@ -412,8 +431,10 @@ background-position: center;
 background-repeat: no-repeat;
 
 }
+.BulletText{
+  font-size: 15px;
 }
-
+}
 @media only screen and (max-width: 900px){
 .WeaponsPhotos
 {
