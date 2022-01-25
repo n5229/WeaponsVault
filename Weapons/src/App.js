@@ -210,18 +210,14 @@ function App() {
     
     <s.Screen>
              <StyledImg alt={"CoverArt"} src={"/config/images/CAN3.jpg"} /> 
-      <s.Container
-   
-       >
+      <s.Container >
         <s.SpacerSmall />
-
-        <ResponsiveWrapper flex={1} style={{ padding: 24 }} test>
-          <s.Container flex={1} jc={"center"} ai={"center"}>
-          </s.Container>
+        <ResponsiveWrapper  style={{ }} test>
+        
           <s.SpacerLarge />
           <s.Container
         
-          flex={2}
+    
           jc={"center"}
           ai={"center"}
           style={{
