@@ -229,7 +229,7 @@ text-align: left;
 {
 position: relative;
 width: 100%;
-padding: 60px 100px; 
+padding: 60px 80px; 
 
 }
 .Container h2 /*.vWelcome  Welcome to the Vault Header */
@@ -265,16 +265,13 @@ padding: 10px;
 justify-content: flex-end;
 position: relative;
 padding: 20px 20px;
-margin-top: -30%;
-
+margin-top: -100%;
 }
 .Containerimg
 {
 float:left;
 width: 100%;
-
 }
-
 .Container p{
 margin: 0;
 font-family: 'Source Sans Pro', sans-serif;
@@ -352,7 +349,6 @@ word-break: break-word;
 }
 
 @media only screen and (min-width: 814px) and (max-width: 900px){
-
 .countdownContainer
 {
 transform: translateX(-50%) translateY(-280%);

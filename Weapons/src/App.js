@@ -217,7 +217,6 @@ function App() {
           <s.SpacerLarge />
           <s.Container
         
-    
           jc={"center"}
           ai={"center"}
           style={{
@@ -297,7 +296,6 @@ function App() {
                   >
                  Mint Weapon
                   </button> 
-                    
                     {/* <div className="App">
                       <Modal isOpen={true}>
                         <h2> Modal Title</h2>
@@ -420,7 +418,7 @@ function App() {
             <s.SpacerMedium />
           </s.Container>
           <s.SpacerLarge />
-          <s.Container flex={1} jc={"center"} ai={"center"}>
+          <s.Container /* flex={1}*/ jc={"center"} ai={"center"}>
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerMedium />
