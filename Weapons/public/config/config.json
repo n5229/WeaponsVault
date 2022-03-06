@@ -11,7 +11,7 @@
   "MAX_SUPPLY":10000,
   "WEI_COST": 88000000000000000,
   "DISPLAY_COST": 0.088,
-  "GAS_LIMIT": 999999, 
+  "GAS_LIMIT": 354084, 
   "MARKETPLACE": "Opensea",
   "MARKETPLACE_LINK": "https://opensea.io/collection/theweaponsvault",
   "SHOW_BACKGROUND": true
