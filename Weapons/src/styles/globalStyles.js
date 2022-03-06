@@ -36,7 +36,7 @@ export const SpacerMedium = styled.div`
 
 // Used for providing space between components
 export const SpacerLarge = styled.div`
-  height: 25px;
+  height: 40px;
   width: 50px;
 `;
 
@@ -83,4 +83,5 @@ export const StyledClickable = styled.div`
     opacity: 0.6;
   }
 `;
+
 

@@ -1,21 +1,20 @@
 {
-  "CONTRACT_ADDRESS": "0x0A24e1E7D65E4a6Bb4d4D76D12E00e1b19B9C4Aa",
-  "SCAN_LINK": "https://rinkeby.etherscan.io/token/0x0a24e1e7d65e4a6bb4d4d76d12e00e1b19b9c4aa",
+  "CONTRACT_ADDRESS": "0x59A7b8dC40095877902f5113fBaD18BE3f86D14F",
+  "SCAN_LINK": "https://etherscan.io/token/0x59a7b8dc40095877902f5113fbad18be3f86d14f",
   "NETWORK": {
     "NAME": "Ethereum",
     "SYMBOL": "ETH",
-    "ID": "4"
+    "ID": "1"
   },
-  "NFT_NAME": "Weapons",
-  "SYMBOL": "VULT",
+  "NFT_NAME": "The Weapons Vault",
+  "SYMBOL": "VXLT",
   "MAX_SUPPLY":10000,
   "WEI_COST": 88000000000000000,
   "DISPLAY_COST": 0.088,
-  "GAS_LIMIT": 285000, 
+  "GAS_LIMIT": 3600000, 
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://testnets.opensea.io/collection/weaponsvault-nlenwdkwvo",
-  "SHOW_BACKGROUND": true,
-  "Opensea_Link": ""
+  "MARKETPLACE_LINK": "https://opensea.io/collection/theweaponsvault",
+  "SHOW_BACKGROUND": true
   
 }
 

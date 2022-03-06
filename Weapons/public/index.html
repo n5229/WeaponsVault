@@ -11,7 +11,36 @@
 <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
 <link rel="button" href="../src/App.js"/>
 
-       
+<div class="text-outline-marquee bg-color padding text-size text-color">
+  <div class= "marquee-container" style="--pause-on-hover:running; --pause-on-click:running;">
+  <div class="marquee" style="--play:running; --direction:reverse; --duration:224.156s; --delay:0s; --iteration-count:infinite;" >
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span></div>
+  <div class="marquee" style="--play:running; --direction:reverse; --duration:224.156s; --delay:0s; --iteration-count:infinite;">
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  <span class="uppercase">minting is live! ·&nbsp;</span>
+  </div>
+  </div>
+</div>
+
 <nav>
   <div>
   <h1><a href="index.html"> <img src="%PUBLIC_URL%/config/images/logo.jpeg " alt="logo"> </a></h1> 
@@ -25,68 +54,22 @@
   <li> <a class="nav_links_icon" href="https://www.instagram.com/weaponsvault_/" target="_blank"> 
   <ion-icon name="logo-instagram"></ion-icon> </a> </li>
   </ul>
- </nav>
+</nav>
+
 <div id="root"></div>
 </head>
 
 <body>
-<!-- <table class="countdownContainer">
-<tr class="LaunchTitle">
-<td colspan="4" >LAUNCH COUNTDOWN </td>
-</tr>
-<tr class="info">
-<td id="days"> </td>
-<td id="hours"> </td>
-<td id="minutes">12 </td>
-<td id="seconds">22 </td>
-</tr>
-<tr class="info2">
-<td> Days</td>
-<td> Hours</td>
-<td> Minutes</td>
-<td> Seconds</td>
-</tr>
-</table>
-<script type="text/JavaScript">
-
-function countdown() {
-var now = new Date();
-var eventDate = new Date(2022, 01, 30);
-var currentTime = now.getTime();
-var eventTime = eventDate.getTime();
-var remTime = eventTime - currentTime;
-
-var s = Math.floor(remTime / 1000); //Math.floor rounds to nearest integer
-var m = Math.floor(s / 60);
-var h = Math.floor(m / 60);
-var d = Math.floor( h / 24);
-d %= 30;
-h %= 24;
-m %= 60;
-s %= 60;
-c = ":";
-d = (d < 10) ? "0" + d : d;
-h = (h < 10) ? "0" + h : h;
-m = (m < 10) ? "0" + m : m;
-s = (s < 10) ? "0" + s : s;
-  
-document.getElementById("days").textContent = d;
-document.getElementById("days").innerText = d;
-document.getElementById("hours").textContent = h;
-document.getElementById("minutes").textContent = m; 
-document.getElementById("seconds").textContent = s;
-setTimeout(countdown, 1000);
-}
-countdown();
-</script> -->
-
 <noscript>You need to enable JavaScript to run this app.</noscript>
+<script> 
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+  }
+</script>
+
 <div class="Container">
-  
-  <img src="%PUBLIC_URL%/config/images/VaultFeature2.jpg"  class="Containerimg" length="500" > 
-  <h2> WELCOME TO THE WEAPONS VAULT</h2>
+  <h2>MISSION BRIEFING</h2>
     <p>
-  Weapons Vault is a NFT (Non-Fungible Token) collection of 10,000 weapons.
   You've been airdropped on a small island in the Meta-Caribbean, alone in a 
   strange place with strange people. It's beautiful here but there is trouble in paradise. 
   The last great World War saw the implementation of meta minerals mined from deep within  
@@ -94,13 +77,9 @@ countdown();
   ballistics like the world has never seen before. With features ranging anywhere from  
   elemental and magical infusion to unbreakability and non-fungibility.<br/> <br/> These high powered weapons and accessories have fallen into the hands of the wrong HODLers. 
   As a member of our super elite weapons recovery team, It is your mission to restore all 10,000 guns back into THE VAULT.
-  <br/> <br/>How many will you find?
+  <br/> <br/> <div class="ContainerS"> How many will you find?</div>
   </p>
-  
 </div>  
-</div>  
-
-
 
 <div class="AboutBullet"> 
 ABOUT WEAPONS VAULT 
@@ -109,31 +88,31 @@ ABOUT WEAPONS VAULT
 
 <div class="Bullets">
 <img src="%PUBLIC_URL%/config/images/GoldBullet.png" >
-<span class="BulletText">The first epic weaponized NFT collection that is building a strong community and creating value for the holders</span>
+<span class="BulletText">The Vault is a Metaverse gaming project that aims to build a strong community and create value for its holders</span>
 </div>
 <div class="Bullets">
 <img src="%PUBLIC_URL%/config/images/GreenBullet.png" >
-<span class="BulletText">The Vault contains five guns types; Sniper Rifle, Assault Rifle and 3 uniquely designed Handguns (Vult-X37, Vult Bazuka and Velar)  </span>
+<span class="BulletText">The Vault contains five guns types; Sniper Rifle, Assault Rifle and 3 uniquely designed Handguns (Vult-X37, Vult Bazuka and Velar) </span>
 </div>
 <div class="Bullets">
 <img src="%PUBLIC_URL%/config/images/OrangeBullet.png" >
-<span class="BulletText">Weapons will have different rarity levels and the metadata for each weapon is frozen</span>
+<span class="BulletText">Weapons will have different rarity levels.</span>
 </div>
 <div class="Bullets">
 <img src="%PUBLIC_URL%/config/images/BlueBullet.png" >
-<span class="BulletText">All 10,000 weapons has been uniquely generated from 200+ different digital attributes with traits ranging from various line art drawings, color schemes, textures, and much more</span>
+<span class="BulletText">Weapons were generated from 200+ attributes with traits ranging from various line art drawings, color schemes, textures, and more</span>
 </div>
 <div class="Bullets">
 <img src="%PUBLIC_URL%/config/images/RedBullet.png" >
-<span class="BulletText">The weapons were compiled to ensure fair distribution at launch. NOTE: 30 Weapons are being withheld from the initial sale. These will be used for giveaways, rewards and for the creators' of Weapons Vault</span>
+<span class="BulletText">Weapons were compiled to ensure fair distribution at launch. NOTE: 30 Weapons were reserved at contract deployment</span>
 </div>
 <div class="Bullets">
 <img src="%PUBLIC_URL%/config/images/PurpleBullet.png" >
-<span class="BulletText">Each weapon costs 0.088 ETH; stored as ERC721 tokens on the ethereum blockchain and hosted on IPFS </span>
+<span class="BulletText">Each weapon costs 0.088 ETH; are stored as ERC721 tokens on the ethereum blockchain and hosted on IPFS </span>
 </div>
 </div>
 
-</p><br/><br/><br/><br/><br/><br/>
+</p><br/><br/><br/><br/><br/>
 <div class="VaultPhotos"> 
  <hr>
   </div> <br/> <br/>
@@ -157,71 +136,44 @@ ABOUT WEAPONS VAULT
   Mission Objectives 
   </div> <br/> 
   
-  <div class="RoadmapInfo"> 
+  <div class="RoadmapInfo" > 
   <p>
-  <em>Our team has worked assiduously to ensure every aspect of this project is top quality.<br/>
-  We value your support and we'll continue to produce top quality results #EliteAgents #TheVault</em><br/>
+  <em>Our team has worked assiduously to ensure every aspect of The Vault is top quality.<br/>
+  We value your support and will continue to deliver. #TheVault</em><br/>
   <br/> <br/> <br/> <br/> 
   
   
-  <div class="RoadmapHeaders">
-  Mission Alienware GiveAway  <br/><br/> 
+  <div class="RoadmapHeaders" >
+  Alienware GiveAway  <br/><br/> 
   </div>
-  3 lucky agents will be selected to receive an Alienware laptop <br/> <br/> <br/> 
+  Three lucky agents will be selected to receive an Alienware laptop courtesy of The Vault. <br/> <br/> <br/> 
 
   <div class="RoadmapHeaders">
-  Mission Reinforcement  <br/> 
+  Operation Support  <br/> 
   </div>
-  <br/>Agents will be provided with additional weapon support to complete future missions.<br/> 
-  The first weapons support will be revealed in the next collection: EXPLOSIVESinTHEVAULT (EiV)<br/> <br/>
+  <br/>Agents will be provided with weapon support to complete future missions.<br/> 
+  Weapon Support #1: EXPLOSIVESinTHEVAULT (EiV)<br/> <br/>
+  Operation Support has been extended to provide donations to UkraineDAO.eth.<br/> 
+   20 ETH will be sent to the DAO's address.
+  <br/> <br/>
+
 
   <div class="RoadmapHeaders">
-  <br/> Mission Metaverse <br/><br/>  
+  <br/>Metaverse Development <br/><br/>  
   </div>
-  We acquired a metaverse from NFT Worlds which we intend to build for the community.<br/> 
-  More updates will be provided as time progresses.
-  <br/> <br/> <br/> <br/>   <br/> <br/>
+  The <a class="NftWorld" target="blank" href="https://opensea.io/assets/0xbd4455da5929d5639ee098abfaa3241e9ae111af/2500">metaverse </a> will be built on <a class="NftWorld" target="blank" href="https://nftworlds.com/">NFT Worlds.</a> <br/>
+  Players will be able to engage in various activities and challenges to earn $WRLD, land, collectibles, and other in-game items.<br/>
+  Players will be able to access The Vault metaverse on consoles, PCs, and hand held devices.
+  <br/> <br/> <br/> <br/> <br/>
   </p>
   </div>
 </div>
-   
-<div class="TeamIntro"> 
-Behind the Screen: The Team 
-</div> <br/> <br/> 
 
-<div class="allteam"> 
-  <div class="TeamPhotos"> 
-  <a href="#"> <img src="%PUBLIC_URL%/config/images/WeMintWashington.jpeg"  width="290" length="300"> </a> </img> 
-  <span class="TeamNames">SilentRunner </br> Di_Contractor </span> 
-  </div>
-
-  <div class="TeamPhotos"> 
-  <a href="#"> <img src="%PUBLIC_URL%/config/images/ApeGang.jpg" width="300" length="300"> </a> </img>
-  <span class="TeamNames">Mick <br/> Di_Artist  </span>
-  </div>
-
-  <div class="TeamPhotos"> 
-  <a href="#"> <img src="%PUBLIC_URL%/config/images/BAKC.png" width="300" length="300"> </a> </img>
-  <span class="TeamNames">TweetyBird </br> Di_WebDev </span> 
-  </div>
-    
-  <div class="TeamPhotos"> 
-  <a href="#"> <img src="%PUBLIC_URL%/config/images/BAYC-7052.png" width="300" length="300"> </a> </img>
-  <span class="TeamNames">HueWaves </br> Di_Marketer</span>
-  </div>
-</div>
-
-<br>  <br>  <br> </br>
-  
-<div class="About"> 
-In Association with 
-</div>
-
-<div class="Genr8Photo"><a href="https://genr83d.com/" target="-blank"> <img src="%PUBLIC_URL%/config/images/genr8-3d.jpg" width="100" length="100"> </a> 
-<span class="Genr8"></br>Genr83D </br> 3DVideo_Creators</span>
-</div>
 <br/>  <br/>  <br/> 
 
+<div class="Vlogo"> 
+<img  src="%PUBLIC_URL%/config/images/VaultLogo.jpg"width="200" length="200"> 
+</div>
 <div class="contractAddress">
 VERIFIED SMART CONTRACT ADDRESS: <a HREF="https://etherscan.io/token/0x59a7b8dc40095877902f5113fbad18be3f86d14f"> 0x59A7b8dC40095877902f5113fBaD18BE3f86D14F</a>
 </div>
@@ -250,7 +202,6 @@ VERIFIED SMART CONTRACT ADDRESS: <a HREF="https://etherscan.io/token/0x59a7b8dc4
     </ul>
   </nav>
 </footer>
-
 
 </br><br>  <br>  <br> </br>
 

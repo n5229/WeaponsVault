@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rammetto+One&display=swap');
 :root 
 {
 margin: 0;
@@ -14,6 +15,7 @@ position: absolute;
 top: 34px;
 right: 20px;
 z-index: 9999;
+
 }  
 
 head html
@@ -29,6 +31,7 @@ body html
 margin:0;
 padding:0;
 }
+
 button
 {
 color: white;
@@ -121,9 +124,10 @@ color: RGBA(0,136,169,0.8);
 }
 .secondButton{
 position: absolute;
-top: 23px;
+top: 70px;
 right: 20px;
 z-index: 9999;
+
 } 
 }
 
@@ -159,24 +163,6 @@ border: 1px solid rgb(53, 185, 0);
 padding: 10px;
 }
 
-@media only screen and (max-width: 375px){
-.countdownContainer
-{
-transform: translateX(-50%) translateY(-100%);
-width: auto;
-position: relative;
-}
-}
-@media only screen and (min-width: 376px) and (max-width: 480px) {
-.countdownContainer
-{
-transform: translateX(-50%) translateY(-320%);
-width: auto;
-position: relative;
-}
-
-}
-
 
 .info
 {
@@ -192,14 +178,7 @@ font-family: 'Rammetto One',cursive;
 color: rgb(255, 255, 255);
 font-family: 'Rammetto One',cursive;
 }
-.LaunchTitle
-{
-font-size: 45px;
-font-weight: 500;
-color: #FFD700;
-font-family: 'Rammetto One',cursive;
-line-height: 54px;
-}
+
 h1
 {
 font-size: 30px ;
@@ -228,8 +207,9 @@ text-align: left;
 .Container
 {
 position: relative;
+text-align: center;
 width: 100%;
-padding: 60px 80px; 
+padding: 60px 180px; 
 
 }
 .Container h2 /*.vWelcome  Welcome to the Vault Header */
@@ -240,6 +220,7 @@ font-weight: bold ;
 font-style: oblique ;
 color: #ecf0f1;
 padding: 10px;
+font-family: 'PressStart2P';
 }
 .Container p
 {
@@ -250,12 +231,26 @@ text-align: justify;
 padding: 10px;
 }
 
+.NftWorld
+{
+  text-decoration: none;
+  color: #ecf0f1;
+  font-weight: bold;
+}
 .Containerimg
 {
 float: left;
 width: 500px;
 padding: 10px;
+}
 
+.ContainerS
+{
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 18px;
+color: white;
+text-align: center;
+padding: 10px;
 }
 
 /*IPHONE Screen FOR Intro to Vault & img*/
@@ -265,7 +260,7 @@ padding: 10px;
 justify-content: flex-end;
 position: relative;
 padding: 20px 20px;
-margin-top: -100%;
+margin-top: -100%;  
 }
 .Containerimg
 {
@@ -282,6 +277,7 @@ text-align: left;
 }
 .Container h2{
 font-size: 20px;
+font-family: 'PressStart2P';
 }
 .TeamIntro
 {
@@ -290,6 +286,7 @@ position: relative;
 font-size: 25px;
 color: rgb(255, 255, 255);
 margin-top: 50px;
+font-family: 'PressStart2P';
 } 
 }
 
@@ -302,7 +299,7 @@ position: relative;
 font-size: 30px;
 color: rgb(255, 255, 255);
 margin-top: 80px;
-
+font-family: 'PressStart2P';
 }
 .About
 {
@@ -311,6 +308,8 @@ position: relative;
 font-size: 30px;
 color: rgb(255, 255, 255);
 margin-top: 50px;
+text-transform: uppercase;
+font-family: 'PressStart2P';
 } 
 .TeamIntro
 {
@@ -319,6 +318,7 @@ position: relative;
 font-size: 30px;
 color: rgb(255, 255, 255);
 margin-top: 50px;
+font-family: 'PressStart2P';
 } 
 
 .AllBullets
@@ -341,7 +341,7 @@ float: left;
 }
 
 .BulletText{
-font-size: 16px;
+font-size: 17px;
 font-family: 'Source Sans Pro', sans-serif;
 color: white;
 display: block;
@@ -359,7 +359,6 @@ width: auto;
 padding: 20px 20px;
 margin-top: -30%;
 }
-  
 }
 
 .WeaponsPhotos
@@ -371,7 +370,6 @@ justify-content: center;
 align-items: center;
 }
 
-
 .RoadmapInfo
 {
 display: center;
@@ -380,8 +378,6 @@ color: white;
 font-size: 18px;
 font-family: 'Source Sans Pro', sans-serif;
 }
-
-
 
 .TeamPhotos
 {
@@ -426,8 +422,8 @@ background-image: url("../config/images/BG1.jpg");
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-
 }
+
 .BulletText{
   font-size: 15px;
 }
@@ -497,9 +493,11 @@ color: rgb(255, 255, 255);
 .VaultPhotos hr:after {
   background: rgb(0, 0, 0);
   content: ' A Look into The Vault';
+  text-transform: uppercase;
   padding: 0 4px;
   position: relative;
   top: -13px;
+  font-family: 'PressStart2P';
 }
 
 .roadmapBackground
@@ -508,15 +506,16 @@ background-image: url("../config/images/BG1.jpg");
 max-width: 100%;
 background-position: center;
 }
-
-    
+ 
 .RoadmapHeaders
 {
 color: gold;
 font-size: 16px;
-font-family: 'Source Sans Pro', sans-serif;
+font-family: 'PressStart2P';
 font-weight: bold;
 text-align: center;
+text-transform: uppercase;
+
 }
 
 footer
@@ -530,6 +529,11 @@ text-align: right;
 margin-right: 20px;
 }
 
+.Vlogo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   
+}
 .termsp
 {
 font-family: 'Source Sans Pro', sans-serif;
@@ -558,11 +562,8 @@ footer nav div:first-child
 footer nav ul li a:hover
 {
 color: RGBA(0,136,169,0.8);
-
 }
 }
-
-
 .contractAddress
 {
 text-align: center;
@@ -575,4 +576,95 @@ color: white;
 color: gold;
 text-decoration: none;
 overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+  .secondButton {
+  display: none;
+  }
+}
+
+.text-outline-marquee{
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:rgba(0,0,0,.3);
+  }
+.marquee-container {
+  overflow-x: hidden !important;
+  font-family: 'PressStart2P';
+  display: flex !important;
+  flex-direction: row !important;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-color {
+--tw-text-opacity: 1;
+  color: rgb(250 230 1/var(--tw-text-opacity));
+}
+.text-size {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.bg-color {
+  --tw-bg-opacity: 1;
+ background-color: rgb(250 230 1/var(--tw-bg-opacity));
+
+}
+.padding {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.marquee-container:hover div {
+  animation-play-state: var(--pause-on-hover);
+}
+.marquee-container:active div {
+  animation-play-state: var(--pause-on-click);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.overlay::before, .overlay::after {
+  background: linear-gradient(to right, var(--gradient-color));
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: var(--gradient-width);
+  z-index: 2;
+}
+.overlay::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.overlay::before {
+  left: 0;
+  top: 0;
+}
+
+.marquee {
+  flex: 0 0 auto;
+  min-width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+  color: black;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

@@ -13,7 +13,7 @@ export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
   border: none;
-  background-color: red;
+  background-color: White;
   padding: 10px;
   font-weight: bold;
   color: var(--secondary-text);
@@ -33,7 +33,7 @@ export const StyledRoundButton = styled.button`
   padding: 10px;
   border-radius: 100%;
   border: none;
-  background-color: red;
+  background-color: white;
   padding: 10px;
   font-weight: bold;
   font-size: 15px;
@@ -53,7 +53,7 @@ export const StyledRoundButton = styled.button`
     -moz-box-shadow: none;
   }
 `;
-//for pop up box
+
 export const ResponsiveWrapper = styled.div`
   display: flex;
   flex: 1;
@@ -89,9 +89,7 @@ export const StyledImg = styled.img`
   }
   @media (max-width: 812px) {
     width: 100%;
-    
   }
-
 
   transition: width 0.5s;
 `;
@@ -101,14 +99,11 @@ export const StyledLink = styled.a`
   text-decoration: none;
 `;
 
-
-
 function App() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
   const [claimingNft, setClaimingNft] = useState(false);
-  const [show, setShow] = React.useState(true);
   const [feedback, setFeedback] = useState(`Click buy to mint your Weapon.`);
   const [mintAmount, setMintAmount] = useState(1);
   const [CONFIG, SET_CONFIG] = useState({
@@ -157,12 +152,13 @@ function App() {
       .then((receipt) => {
         console.log(receipt);
         setFeedback(
-          `Objective completed. ${CONFIG.NFT_NAME} restored. View Vault on  ${CONFIG.Opensea_Link} .`
-          // <StyledLink target={"_blank"} href={CONFIG.Opensea_Link}>
+          `Objective completed. ${CONFIG.NFT_NAME} restored. View Vault on https://opensea.io/collection/theweaponsvault .`
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
       });
+
+     
   };
 
   const decrementMintAmount = () => {
@@ -205,76 +201,22 @@ function App() {
   useEffect(() => {
     getData();
   }, [blockchain.account]);
+  
 
-  return (
-    
-    <s.Screen>
-             <StyledImg alt={"CoverArt"} src={"/config/images/CAN3.jpg"} /> 
-      <s.Container >
-        <s.SpacerSmall />
-        <ResponsiveWrapper  style={{ }} test>
-        
+  return ( 
+    <s.Screen> 
+        <StyledImg alt={"CoverArt"} src={"/config/images/CAN3.jpg"} />  
+        <ResponsiveWrapper>
           <s.SpacerLarge />
           <s.Container
-        
           jc={"center"}
           ai={"center"}
           style={{
-         // marginTop: 250,
-         // height: 350,
-          //</ResponsiveWrapper> 
-          //opacity: 0.65,
-         // backgroundColor: "white",
-         // padding: 10,
-         // borderRadius: 10,
-         // border: "2px dashed var(--secondary)",
-         // boxShadow: "0px 5px 5px 2px rgba(0,0,0,0.7)",
-
+         flex: 1,
+         border: "2px dashed var(--secondary)",
+         boxShadow: "0px 5px 5px 2px rgba(0,0,0,0.7)",
           }}
           >
-            <s.TextDescription
-              style={{
-                textAlign: "center",
-                color: "var(--primary-text)",
-              }}
-            >
-              <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {/* {truncate(CONFIG.CONTRACT_ADDRESS, 15)} */}
-              </StyledLink>
-            </s.TextDescription>
-            <s.SpacerSmall />
-            {/* {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? ( */}
-            <>
-              <s.TextTitle
-                style={{ textAlign: "center", color: "var(--accent-text)" }}
-              >
-                {/* The sale has ended. */}
-              </s.TextTitle>
-              <s.TextDescription
-                style={{ textAlign: "center", color: "var(--accent-text)" }}
-              >
-                {/* You can still find {CONFIG.NFT_NAME} on */}
-              </s.TextDescription>
-              <s.SpacerSmall />
-              <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
-                {/* {CONFIG.MARKETPLACE} */}
-              </StyledLink>
-              {/* </>
-            ) : (
-              <> */}
-              <s.TextTitle
-                style={{ textAlign: "center", color: "var(--accent-text)" }}
-              >
-                {/* 1 {CONFIG.SYMBOL} costs {CONFIG.DISPLAY_COST}{" "}
-                  {CONFIG.NETWORK.SYMBOL}. */}
-              </s.TextTitle>
-              <s.SpacerXSmall />
-              <s.TextDescription
-                style={{ textAlign: "center", color: "var(--accent-text)" }}
-              >
-                {/* Excluding gas fees. */}
-
-              </s.TextDescription>
               <s.SpacerSmall />
               {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
@@ -285,24 +227,19 @@ function App() {
                       color: "var(--accent-text)",
                     }}
                   >
+
                   </s.TextDescription>
-                   <button
-                className="secondButton"
+                   <button disabled = {false} //Mint weapon button
+                    className="secondButton"
                     onClick={(e) => {
-                      e.preventDefault();
-                     //dispatch(connect());
-                      getData();
+                    e.preventDefault();
+                     dispatch(connect());
+                    getData();
+                    window.scrollTo(0,800);
                     }}
                   >
                  Mint Weapon
                   </button> 
-                    {/* <div className="App">
-                      <Modal isOpen={true}>
-                        <h2> Modal Title</h2>
-                        <p> Modal Body</p>
-                      </Modal>
-                    </div> */}
-                  
                   {blockchain.errorMsg !== "" ? ( //INSTALL METATMASK ERROR
                     <>
                       <s.SpacerSmall />
@@ -312,11 +249,9 @@ function App() {
                           color: "red",
                           fontWeight: "bold",
                           fontSize: 30,
-                          
                         }}
                       >
                         {blockchain.errorMsg}
-
                       </s.TextDescription>
                     </>
                   ) : null}
@@ -326,20 +261,30 @@ function App() {
                   <s.TextDescription
                     style={{
                       textAlign: "center",
-                      color: "red",
+                      color: "white",
                       fontWeight: "bold",
                       fontSize: 25,
                     }}
                   >
                     {feedback}
                   </s.TextDescription>
+                  <s.TextDescription
+                    style={{
+                      textAlign: "center",
+                      color: "white",
+                      fontWeight: "bold",
+                      fontSize: 25,
+                    }}
+                  >
+                  </s.TextDescription>
+                  
 
                   <s.TextTitle
                     style={{
                       textAlign: "center",
                       fontSize: 50,
                       fontWeight: "super bold",
-                      color: "red",
+                      color: "white",
                       lineheight: 1.5,
 
                     }}
@@ -347,6 +292,7 @@ function App() {
                     {data.totalSupply} / {CONFIG.MAX_SUPPLY}
                   </s.TextTitle>
                   <s.SpacerMedium />
+                  
                   <s.Container ai={"center"} jc={"center"} fd={"row"}>
                     <StyledRoundButton
                       style={{ lineHeight: 0.4 }}
@@ -357,13 +303,12 @@ function App() {
                       }}
                     >
                       -
-
                     </StyledRoundButton>
                     <s.SpacerMedium />
                     <s.TextDescription
                       style={{
                         textAlign: "center",
-                        color: "red",
+                        color: "white",
                         fontWeight: "bold",
                         fontSize: 20,
                       }}
@@ -380,53 +325,42 @@ function App() {
                     >
                       +
                     </StyledRoundButton>
-
-
                   </s.Container>
                   <s.SpacerSmall />
+                
                   <s.Container ai={"center"} jc={"center"} fd={"row"}>
-
-                    <StyledButton
-
+                     <StyledButton
                       disabled={claimingNft ? 1 : 0}
                       onClick={(e) => {
-                        e.preventDefault();
-                        claimNFTs();
-                        getData();
+                      e.preventDefault();
+                      claimNFTs();
+                      getData();
                       }}
                     >
-                      {claimingNft ? "BUSY" : "BUY"}
-                    </StyledButton>
+                    {claimingNft ? "BUSY" : "Mint"}
+                    </StyledButton> 
 
                     <button //BUY BUTTON
-                      className="secondButton"
-                      disabled={claimingNft ? 1 : 0}
-                      onClick={(e) => {
-                        e.preventDefault();
-                        claimNFTs();
-                        getData();
-                      }}
+                    className="secondButton"
+                    id="buyButton"
+                    disabled={claimingNft ? 1 : 0}
+                    onClick={(e) => {
+                    
+                    e.preventDefault();
+                    claimNFTs();
+                    getData();
+                    }}
                     >
-                      {claimingNft ? "BUSY" : "Mint Weapon"}
-
+                    {claimingNft ? "BUSY" : "Mint Weapon"}
                     </button>
+
                   </s.Container>
                 </>
               )}
-            </>
-         
-            <s.SpacerMedium />
-          </s.Container>
-          <s.SpacerLarge />
-          <s.Container /* flex={1}*/ jc={"center"} ai={"center"}>
+            
           </s.Container>
         </ResponsiveWrapper>
-        <s.SpacerMedium />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-        </s.Container>
-      </s.Container>
     </s.Screen>
   );
 }
-
 export default App;
